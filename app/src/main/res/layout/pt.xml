@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="#644237"
+        android:layout_width="227dp"
+        android:layout_height="191dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/bSss"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/groupbut"
+        android:text="start game"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/bGpp"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/groupbut"
+        android:text="game part two"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/bSss"
+        app:layout_constraintStart_toStartOf="@+id/bSss"
+        app:layout_constraintTop_toBottomOf="@+id/bSss"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/bCccc"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/groupbut"
+        android:text="close games"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/bGpp"
+        app:layout_constraintStart_toStartOf="@+id/bGpp"
+        app:layout_constraintTop_toBottomOf="@+id/bGpp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/bSss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_slot_4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
